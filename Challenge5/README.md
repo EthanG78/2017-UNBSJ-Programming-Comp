@@ -1,6 +1,6 @@
 # Challenge Five: Analyzing Extreme Effects
 ---
-Data analytics encompasses the identification of one variable over another one in a larger dataset. For example, one may want to know how the outside temperature is affecting the level of physical activity of people. One problem is that very often, there are many other factors thay may come into play. For our example here, the level of physical activity of people may be affected by other things than the temperature, for example if the person has the flu, or did not have a change to sleep enouogh recently. In this case, we can still detect an effect "at the extreme": we can check for example if on a really hot days, people are getting significantly more or less active than usual. Your goal here is to right a program to perform this kind of "analysis at the extreme".</br>
+Data analytics encompasses the identification of one variable over another one in a larger dataset. For example, one may want to know how the outside temperature is affecting the level of physical activity of people. One problem is that very often, there are many other factors thay may come into play. For our example here, the level of physical activity of people may be affected by other things than the temperature, for example if the person has the flu, or did not have a change to sleep enouogh recently. In this case, we can still detect an effect "at the extreme": we can check for example if on really hot days, people are getting significantly more or less active than usual. Your goal here is to right a program to perform this kind of "analysis at the extreme".</br>
 
 In particular, you will be analyzing a dataset related to a person who is exercising by running outside. This dataset contains pairs of numbers: the temperature at a certain time, and the speed of the runner at that time. We are interested to see if the runner is typicaly running faster or slower on really hot days(or really cold days).</br>
 
@@ -12,4 +12,29 @@ The rest of the input contains the actual data. First, you have a value N (posit
 - Number of times where the speed was really fast on a really cold day</br>
 - Number of times where the speed was really slow on a really cold day</br> 
 
-Your output should contain those 4 counts, one per line in thsi order. In the example below, you will see thay the runner being analyzed is generally affected negatively by the heat, but is not really affected by the cold(same number of "fast" than number of "slow").</br>
+Your output should contain those 4 counts, one per line in this order. In the example below, you will see thay the runner being analyzed is generally affected negatively by the heat, but is not really affected by the cold(same number of "fast" than number of "slow").</br>
+
+EXAMPLE INPUT:</br>
+20 30 12 15</br>
+15</br>
+32 10</br>
+25 13</br>
+17 11</br>
+16 17</br>
+22 10</br>
+33 11</br>
+29 16</br>
+15 11</br>
+31 10</br>
+19 16</br>
+31 13</br>
+32 16</br>
+34 9</br>
+29 10</br>
+30 17</br>
+
+EXAMPLE OUTPUT:</br>
+1</br>
+4</br>
+2</br>
+2</br>
